@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC60_MOD04.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightBlue">
+                <Label Text="Ako po si" HorizontalTextAlignment="Center" 
+                       TextColor="Black" FontSize="32">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognioze_Drag"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame BackgroundColor="LightPink">
+                <Label Text="Clefford M. Canoy" HorizontalTextAlignment="Center" 
+                       TextColor="Black" FontSize="32">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognioze_Drag"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame BackgroundColor="LightGreen">
+                <Label Text="at eto po ang aking perporman task sa mapeh" HorizontalTextAlignment="Center" 
+                       TextColor="Black" FontSize="32">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognioze_Drag"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
